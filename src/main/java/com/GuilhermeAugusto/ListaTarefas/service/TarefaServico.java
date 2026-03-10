@@ -10,7 +10,7 @@ import com.GuilhermeAugusto.ListaTarefas.repository.TarefaRepositorio;
 
 @Service
 public class TarefaServico {
-  private final TarefaRepositorio tarefaRepositorio;
+  private TarefaRepositorio tarefaRepositorio;
 
   public TarefaServico(TarefaRepositorio tarefaRepositorio) {
     this.tarefaRepositorio = tarefaRepositorio;
