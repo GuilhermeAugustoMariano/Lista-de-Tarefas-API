@@ -10,6 +10,7 @@ import com.GuilhermeAugusto.ListaTarefas.repository.TarefaRepositorio;
 
 @Service
 public class TarefaServico {
+  @SuppressWarnings("FieldMayBeFinal")
   private TarefaRepositorio tarefaRepositorio;
 
   public TarefaServico(TarefaRepositorio tarefaRepositorio) {

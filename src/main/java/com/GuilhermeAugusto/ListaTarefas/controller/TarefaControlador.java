@@ -18,7 +18,9 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/tarefas")
+@SuppressWarnings("unused")
 public class TarefaControlador {
+  @SuppressWarnings("FieldMayBeFinal")
   private TarefaServico tarefaServico;
 
   public TarefaControlador(TarefaServico tarefaServico) {
