@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.GuilhermeAugusto.ListaTarefas.entity.Tarefa;
 import com.GuilhermeAugusto.ListaTarefas.service.TarefaServico;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/tarefas")
 public class TarefaControlador {
@@ -24,7 +26,7 @@ public class TarefaControlador {
   }
 
   @PostMapping
-  List<Tarefa> criar(@RequestBody Tarefa tarefa) {
+  List<Tarefa> criar(@RequestBody @Valid Tarefa tarefa) {
     return tarefaServico.criar(tarefa);
   }
 
